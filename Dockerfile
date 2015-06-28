@@ -13,7 +13,6 @@ RUN usermod -u 1026 nobody
 RUN usermod -g 100 nobody
 
 RUN add-apt-repository ppa:deluge-team/ppa
-ADD sources.list /etc/apt/
 RUN apt-get update -qq
 RUN apt-get install -qy deluged deluge-web unrar unzip p7zip
 
