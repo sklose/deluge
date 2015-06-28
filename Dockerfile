@@ -9,7 +9,7 @@ ENV HOME /root
 CMD ["/sbin/my_init"]
 
 # Fix a Debianism of the nobody's uid being 65534
-RUN usermod -u 99 nobody
+RUN usermod -u 1026 nobody
 RUN usermod -g 100 nobody
 
 RUN add-apt-repository ppa:deluge-team/ppa
